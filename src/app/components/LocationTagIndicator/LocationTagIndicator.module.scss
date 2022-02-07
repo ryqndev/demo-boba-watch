@@ -1,0 +1,11 @@
+.container {
+
+    &>.globe {
+        position: relative;
+        z-index: 10;
+        display: grid;
+        place-content: center;
+        fill: rgb(49, 209, 49);
+        transition: fill 350ms;
+    }
+}

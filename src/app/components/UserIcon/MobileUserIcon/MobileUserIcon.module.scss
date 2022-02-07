@@ -1,0 +1,13 @@
+.avatar{
+    height: 37px;
+    width: 37px;
+    border-radius: 50%;
+    position: absolute;
+    right: 15px;
+    top: 36px;
+    z-index: 600;
+    border: 2px solid var(--avatar-border);
+    background-color: var(--avatar-border);
+    transition: border-color 350ms;
+    cursor: pointer;
+}

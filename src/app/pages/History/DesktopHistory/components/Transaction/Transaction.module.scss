@@ -1,0 +1,94 @@
+.container {
+    display: grid;
+    grid-template-columns: 100px 1fr auto 50px 80px 30px;
+    column-gap: 20px;
+    padding: 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 150ms;
+
+    @media screen and (min-width: 1400px) {
+        grid-template-columns: 200px 1fr auto 50px 80px 30px;
+    }
+
+    &>div {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        transition: color 150ms;
+
+        &.price {
+            text-align: right;
+        }
+
+        &.rating {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            text-align: right;
+
+            &>svg {
+                fill: gold;
+                place-self: center;
+            }
+        }
+
+        &.expand-icon {
+            display: grid;
+            place-content: center;
+            padding-left: 0px;
+            transition: padding-left 350ms;
+
+            & path {
+                transition: fill 150ms;
+                fill: grey;
+            }
+        }
+
+        &.location {
+            display: grid;
+            overflow: visible;
+            place-content: center start;
+            grid-auto-flow: column;
+            column-gap: 10px;
+
+            &>.tag {
+                transform: translateY(2px);
+            }
+        }
+    }
+
+    &:hover,
+    &.selected {
+        background-color: var(--text-accent);
+
+        &>.location {
+            &>.tag {
+                & path {
+                    fill: white;
+                }
+            }
+        }
+
+        &>.expand-icon {
+            padding-left: 5px;
+
+            & path {
+                fill: var(--text-secondary);
+            }
+        }
+    }
+
+    &:hover {
+        color: var(--text-primary);
+
+        &>.expand-icon {
+            & path {
+                fill: white;
+            }
+        }
+    }
+
+    &.selected {
+        background-color: transparent;
+    }
+}

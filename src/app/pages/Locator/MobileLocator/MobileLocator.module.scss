@@ -1,0 +1,24 @@
+.container {
+    &>.map {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: calc(100vh - 56px);
+        z-index: 0;
+        width: 100vw;
+
+        & .search-area--btn {
+            position: absolute;
+            margin: 0 auto;
+            top: 37px;
+            height: 37px;
+            right: 50%;
+            transform: translateX(50%);
+        }
+    }
+
+    & .toast {
+        position: absolute;
+        top: 40px;
+    }
+}

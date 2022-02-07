@@ -1,0 +1,55 @@
+.scrollable {
+    height: calc(100% - 218px);
+    box-sizing: border-box;
+    padding: 20px 0px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    &::-webkit-scrollbar { 
+        width: 0;
+        height: 0;
+    }
+    @media screen and (min-width: 1400px) {
+        height: calc(100% - 188px);
+    }
+
+    &>.container {
+        display: grid;
+        row-gap: 20px;
+
+        &>.create {
+            padding: 40px 60px 50px;
+            color: grey;
+            border: 2px dashed var(--autofill-text);
+            border-radius: 4px;
+            text-align: center;
+            font-size: 1.6em;
+            cursor: pointer;
+            transition: background-color 350ms, color 350ms;
+
+            h3 {
+                font-size: 1.5em;
+                color: #FFDCDC;
+                margin: 0;
+            }
+            p {
+                font-size: 0.7em;
+                color: #FFDCDC;
+            }
+
+            &:hover {
+                background-color: #ffffff11;
+                color: var(--text-secondary);
+            }
+        }
+        &>.empty {
+            padding: 40px 60px;
+            font-size: 1.8em;
+            text-align: center;
+            background-color: var(--blog-bg-primary);
+            text-transform: uppercase;
+            font-weight: bold;
+            color: var(--autofill-text);
+        }
+    }
+}

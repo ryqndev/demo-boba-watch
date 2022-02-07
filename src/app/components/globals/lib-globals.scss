@@ -1,0 +1,141 @@
+.firebaseui-container {
+    padding: 0 20px;
+}
+
+.firebaseui-container.firebaseui-id-page-callback {
+    background-color: transparent;
+}
+
+.swal2-popup {
+    background-color: var(--bg-primary) !important;
+
+    & p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        color: var(--text-secondary) !important;
+    }
+
+    &.swal2-toast {
+        width: 230px;
+        margin-top: 30px;
+        font-size: 0.95em;
+        box-shadow: 0 0 .625em var(--nav-bg) !important;
+
+        & .swal2-content {
+            padding: 0px 5px;
+        }
+    }
+
+    & .swal2-content {
+        color: var(--history-summary) !important;
+    }
+
+    & .swal2-timer-progress-bar {
+        background-color: var(--text-accent) !important;
+    }
+}
+
+.MuiFormControl-root {
+
+    & label,
+    div {
+        color: var(--history-summary) !important;
+    }
+
+    & :before {
+        border-bottom-color: var(--history-summary) !important;
+    }
+
+    & :after {
+        border-bottom-color: #F68080 !important;
+    }
+}
+
+.MuiPickersCalendarHeader-iconButton,
+.MuiPickersCalendarHeader-iconButton>* {
+    background-color: transparent !important;
+}
+
+.MuiPickersToolbar-toolbar,
+.MuiTabs-root,
+.MuiPickersDay-daySelected,
+.MuiPickersClock-pin,
+.MuiPickersClockPointer-noPoint,
+.MuiPickersClockPointer-pointer {
+    background-color: var(--blog-bg-secondary) !important;
+}
+
+.MuiPaper-root {
+    background-color: var(--bg-primary) !important;
+
+    & span,
+    & .MuiTypography-subtitle1 {
+        color: var(--history-summary);
+    }
+
+    & button {
+
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: transparent;
+        }
+    }
+}
+
+.MuiTypography-root.MuiPickersToolbarText-toolbarTxt.MuiPickersToolbarText-toolbarBtnSelected.MuiTypography-subtitle1 {
+    color: var(--text-primary);
+}
+
+.MuiTypography-h5 {
+    color: var(--text-accent) !important;
+}
+
+.MuiPickersClockPointer-thumb {
+    border-color: var(--blog-bg-secondary) !important;
+}
+
+.rc-md-navigation,
+.rc-md-editor .editor-container .sec-md .input {
+    background-color: var(--editor-background) !important;
+    color: var(--text-secondary) !important;
+    transition: background-color 350ms, color 350ms;
+
+}
+
+div.MuiDialogActions-root button>span {
+    color: var(--text-secondary);
+}
+
+td {
+    color: var(--text-secondary);
+}
+
+thead {
+    color: black;
+}
+
+table {
+    margin-top: 8px;
+}
+
+.leaflet-popup-content-wrapper {
+    max-width: calc(80vw - 40px);
+    background-color: var(--bg-secondary) !important;
+    color: var(--text-secondary) !important;
+}
+
+.leaflet-popup-tip {
+    background-color: var(--bg-secondary) !important;
+}
+
+.leaflet-container {
+    background-color: var(--bg-border) !important;
+}
+
+.custom-html-style {
+    color: var(--text-secondary);
+}

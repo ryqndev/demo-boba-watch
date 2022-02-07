@@ -1,0 +1,14 @@
+.modal-backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #000000aa;
+    display: none;
+    z-index: 1000;
+    overflow: scroll;
+}
+.modal-backdrop.open{
+    display: grid;
+}

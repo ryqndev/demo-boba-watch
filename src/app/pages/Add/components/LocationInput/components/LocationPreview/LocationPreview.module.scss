@@ -1,0 +1,97 @@
+.container {
+    font-size: 1.1em;
+
+    &>h3.title {
+        font-size: 1.5em;
+        color: var(--text-accent);
+        margin: 0 0 10px;
+        text-transform: capitalize;
+    }
+
+    &>.divider {
+        padding-top: 20px;
+        border-bottom: 3px dotted var(--blog-accent);
+    }
+
+    &>.name-container {
+        position: relative;
+        font-size: 0.9em;
+
+        &>.tag {
+            position: absolute;
+            bottom: 35px;
+            right: 0;
+            z-index: 100;
+            background-color: var(--bg-secondary);
+        }
+    }
+
+    &>.select {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        cursor: pointer;
+
+        @media screen and (max-width: 950px) {
+            margin-top: 10px;
+        }
+
+        &>.expand {
+            display: grid;
+            place-self: center;
+
+            & path {
+                fill: var(--blog-accent);
+            }
+        }
+
+        &>h5 {
+            margin: 0;
+            font-size: 1em;
+            font-weight: normal;
+            transition: color 350ms;
+            text-transform: capitalize;
+        }
+
+        &.selected {
+            &>h5 {
+                color: var(--text-accent);
+                font-weight: bold;
+            }
+        }
+    }
+
+    &>h4 {
+        font-weight: normal;
+        color: rgb(92, 92, 92);
+        margin: 20px 0px 0px;
+        font-size: 0.7em;
+    }
+
+    &>.actions {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        grid-template-areas: "cancel spacer confirm";
+        column-gap: 20px;
+        padding-top: 20px;
+
+        &>button {
+            display: grid;
+            place-content: center;
+            cursor: pointer;
+
+            & path {
+                fill: white;
+            }
+
+            &.cancel {
+                grid-area: cancel;
+                background-color: #f63e3e;
+            }
+
+            &.confirm {
+                grid-area: confirm;
+                background-color: #4ad651;
+            }
+        }
+    }
+}

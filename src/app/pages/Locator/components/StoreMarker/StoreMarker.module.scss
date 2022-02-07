@@ -1,0 +1,14 @@
+.popup {
+    font-size: 1.6em;
+    display: grid;
+    padding: 20px;
+    row-gap: 20px;
+    
+    @media screen and (max-width: 800px) {
+        padding: 5px;
+        font-size: 1.2em;
+    }
+    &>h3 {
+        margin: 0;
+    }
+}

@@ -1,0 +1,30 @@
+.container {
+    & .input-container {
+        place-self: center;
+        height: calc(100vh - 40px);
+        width: calc(100vw - 40px);
+        font-size: 1.2em;
+        display: grid;
+
+        &>.preview {
+            place-self: center;
+            height: max-content;
+            padding: 30px 35px;
+
+            &>h3 {
+                font-size: 1.5em;
+                color: var(--text-accent);
+                margin: 0 0 10px;
+            }
+        }
+
+        &>.select {
+            overflow: hidden;
+
+            &>button.back {
+                margin-top: 30px;
+                margin-left: 30px;
+            }
+        }
+    }
+}

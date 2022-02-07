@@ -1,0 +1,32 @@
+.container{
+    padding: 15px 0px 10px 0;
+
+    &>input{
+        box-sizing: border-box;
+        width: 100%;
+        border: 1px solid var(--text-accent);
+        height: 35px;
+        border-radius: 4px;
+        font-size: 1rem;
+        padding: 0px 10px;
+        transition: border-color 350ms;
+        &:focus{
+            box-shadow: 0px 0px 5px 0px var(--text-accent);
+        }
+    }
+    &>.results{
+        position: relative;
+        width: 100%;
+
+        &>.empty {
+            font-size: 0.9em;
+            color: grey;
+            font-weight: bold;
+            text-align: center;
+            border: 2px solid #00000011;
+            border-radius: 4px;
+            padding: 10px;
+            margin-top: 10px;
+        }
+    }
+}
